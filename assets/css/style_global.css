@@ -1,0 +1,302 @@
+/* CSS de base (en mobile first) */
+/* Style global (commun aux différentes pages) */
+
+
+
+header {
+    font-size: 3rem;
+    justify-content: center;
+}
+
+header img {
+    width: 20%;
+    position: relative;
+    left: 10px;
+}
+
+.arrow a i {
+
+    position: relative;
+    right: 9rem;
+    bottom: 8px;
+    font-size: 50%;
+    color: rgb(0, 0, 0);
+
+}
+
+.image_fond {
+    top: 1rem;
+    border-radius: 10%;
+}
+
+.la-note {
+
+    width: 100%;
+}
+
+.icon {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    margin-right: 10px;
+}
+
+/* Effet de survol */
+
+.icon:hover i {
+
+    background-color: #9356DC;
+
+}
+
+main {
+
+    border-radius: 40px 40px 0 0;
+    width: 100%;
+
+
+}
+
+.titre_menu {
+
+    margin-top: -8rem;
+    border-radius: 40px 40px 0px 0px;
+    background-color: rgba(246, 246, 246, 1);
+    position: relative;
+    border-top: #ececec;
+}
+
+.titre_menu h1 {
+
+    position: relative;
+    top: 55px;
+    left: 4%;
+    font-family: 'shrikhand-Regular', 'cursive';
+    font-size: 2.5rem;
+    font-style: italic;
+    font-weight: 400;
+
+}
+
+.titre_menu h1 i {
+
+    position: relative;
+    left: 35%;
+}
+
+.container h4 {
+    font-family: sans-serif;
+    font-weight: 100;
+    line-height: 18.75px;
+    position: relative;
+    top: 35px;
+
+}
+
+.container h4::after {
+
+    content: "";
+    width: 5%;
+    height: 18px;
+    border-bottom: solid 5px rgba(153, 226, 208, 1);
+    position: absolute;
+    left: 0;
+    top: 10px;
+}
+
+.card_list li {
+
+    position: relative;
+    top: 35px;
+    right: 5%;
+    background: white;
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+    border-radius: 20px;
+    margin: 3rem;
+    box-shadow: 0rem 0rem 0px;
+    list-style: none;
+    animation: listItem 1s forwards;
+    opacity: 0;
+    
+
+}
+@keyframes listItem {
+    0%{
+        transform: translatey(20px);
+        opacity: 0%;
+    
+}
+    100%{
+        transform: translatey(0px);
+        opacity: 100%;
+    }
+}
+
+.card_list .text_description,
+.card_list .prix {
+
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.card_list h3 {
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5rem;
+    text-align: left;
+
+}
+
+.text_description {
+    overflow: hidden;
+}
+
+.text_description p {
+
+    font-family: 'Roboto';
+    font-weight: 300;
+    font-size: 1.5rem;
+    line-height: 25px;
+    white-space: nowrap;
+    -o-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    overflow: hidden;
+
+}
+
+.text_description h3 {
+
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.text_description p li:hover,
+.prix {
+
+    margin-right: 60px;
+}
+
+.prix {
+    margin-left: auto;
+    align-self: flex-end;
+}
+
+.valid_prix {
+
+    display: flex;
+    align-items: center;
+    background-color: #99e2d0;
+    color: #69f3b7;
+    font-size: 20px;
+    padding: 39.5px 23px;
+    border-radius: 0 15px 15px 0;
+    right: 0;
+    top: 0;
+    margin-right: -74px;
+    transition: .5s ease-in-out;
+}
+.valid_prix i{
+
+    transition: 0.8s ;
+    background-color: #fdfdfd;
+    border-radius: 150%;
+    width: 20px;
+}
+.card_list li:hover i {
+
+    transform: rotate(360deg);
+}
+
+.card_list li:hover .valid_prix {
+
+    margin-right: 0;
+}
+
+main button {
+
+    position: relative;
+    left: 30%;
+    bottom: 50px;
+}
+
+
+.container_footer {
+    position: relative;
+}
+
+.footer_list {
+
+    border-radius: 20px;
+    list-style: none;
+    color: #ececec;
+
+}
+
+.footer:hover p {
+
+    text-decoration: underline;
+
+}
+
+.footer_list p {
+
+    cursor: pointer;
+    color: #ececec;
+    font-size: 100%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    display: inline;
+}
+
+/* Pour les PC */
+@media screen and (min-width: 992px) {
+
+    .titre_menu{
+
+        margin-top: -10em;
+        margin-left: 10rem;
+        margin-right: 10rem;
+        padding: 2rem;
+    }
+
+    .titre_menu h1{
+    
+        font-family: 'shrikhand-Regular', 'cursive';
+        margin-left: 154px;
+        margin-top: -66px;
+        font-size: 2.5rem;
+        font-style: italic;
+        font-weight: 400;
+    }
+
+    ul h4{
+
+        font-family: sans-serif;
+        font-weight: 100;
+        line-height: 18.75px;
+        margin-top: 81px;
+    }
+
+    .card_list li{
+
+    position: relative;
+    top: 12px;
+    right: 5%;
+    background: white;
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+    border-radius: 20px;
+    margin: 3rem;
+    box-shadow: 0rem 0rem 0px;
+    list-style: none;
+    }
+
+}
+
+
+/* Style spécifique à une page */
+/* Cards */

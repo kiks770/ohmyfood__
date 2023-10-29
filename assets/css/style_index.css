@@ -1,0 +1,48 @@
+/* Style global (commun aux différentes pages) */
+header {
+
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 0 0.5rem rgba(0, 0, 0, .25);
+    align-items: center;
+    z-index: 1000;
+    position: relative;
+
+}
+
+header h1 {
+    margin: 13px 0 8px 0;
+    font-family: "Shrikhand", cursive;
+    font-size: 1.9rem;
+    font-weight: normal;
+}
+
+
+
+.footer_list {
+
+    position: relative;
+    border-radius: 20px;
+    list-style: none;
+    color: #ececec;
+
+}
+
+.footer_icon:hover p {
+
+    text-decoration: underline;
+
+}
+
+.footer_icon p {
+
+    color: #ececec;
+    font-size: 100%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    display: inline;
+}
+
+/* Style spécifique à une page */
+/* Cards */
+
