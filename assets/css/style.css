@@ -38,7 +38,7 @@
     justify-content: center;
     -webkit-box-align: center;
     align-items: center;
-    -webkit-animation: loader 2s 2s ease-out both;
+    -webkit-animation: loader 2s 2s;
     animation: loader 2.5s ease-out both;
 }
     @keyframes loader {
