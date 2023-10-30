@@ -356,31 +356,31 @@ h5 {
 /* Pour les PC */
 @media screen and (min-width: 992px) {
 
-    .loader::after {
-        content: "Ohmyfood";
-        position: fixed;
-        background-color: #0d0c0e86;
-        z-index: 1;
-        height: 100%;
-        width: 100%;
-        display: flex;
-        -webkit-box-pack: center;
-        justify-content: center;
-        -webkit-box-align: center;
-        align-items: center;
-        -webkit-animation: loader 2s 2s ease-out both;
-        animation: loader 2.5s ease-out both;
-    }
-        @keyframes loader {
-            100%{
-    
-              display: none;
-              filter:grayscale(5px);
-              letter-spacing: 150px;
-              
-            }
-      } 
+.loader::after {
+    content: "Omyfood";
+    position: fixed;
+    background-color: #0d0c0e86;
+    z-index: 1;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-animation: loader 2s 2s ease-out both;
+    animation: loader 2.5s ease-out both;
+}
+    @keyframes loader {
+        100%{
+
+          display: none;
+          filter:grayscale(5px);
+          letter-spacing: 150px;
           
+        }
+  } 
+
     .search_bar h2 {
         font-size: 30px;
     }
