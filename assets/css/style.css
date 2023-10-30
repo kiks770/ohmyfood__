@@ -33,10 +33,10 @@
     height: 100%;
     width: 100%;
     display: flex;
-    -webkit-box-pack: center;
+/*     -webkit-box-pack: center; */ 
     justify-content: center;
-    -webkit-box-align: center;
-    align-items: center;
+/*     -webkit-box-align: center; */ 
+   align-items: center;
     animation: loader 2.5s ease-out both;
 /*     -moz-webkit-animation: loader 2s 2s;
     -webkit-animation: loader 2s 2s; */
@@ -45,9 +45,9 @@
     @keyframes loader {
         100%{
 
-          display: none;
           filter:grayscale(5px);
           letter-spacing: 150px;
+          display: none;
           
         }
   } 
@@ -366,9 +366,9 @@ h5 {
     height: 100%;
     width: 100%;
     display: flex;
-    -webkit-box-pack: center;
+   /* -webkit-box-pack: center; */ 
     justify-content: center;
-    -webkit-box-align: center;
+   /* -webkit-box-align: center; */ 
     align-items: center;
     animation: loader 2.5s ease-out both;
 /*     -webkit-animation: loader 2s 2s ease-out both;
@@ -378,9 +378,10 @@ h5 {
     @keyframes loader {
         100%{
 
-          display: none;
           filter:grayscale(5px);
           letter-spacing: 150px;
+          display: none;
+
           
         }
   } 
