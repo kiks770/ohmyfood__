@@ -33,22 +33,15 @@
     height: 100%;
     width: 100%;
     display: flex;
-/*     -webkit-box-pack: center; */ 
     justify-content: center;
-/*     -webkit-box-align: center; */ 
    align-items: center;
     animation: loader 2.5s ease-out both;
-/*     -moz-webkit-animation: loader 2s 2s;
-    -webkit-animation: loader 2s 2s; */
-
 }
     @keyframes loader {
         100%{
-
           filter:grayscale(5px);
           letter-spacing: 150px;
-          display: none;
-          
+          opacity: 0;
         }
   } 
 
@@ -356,35 +349,7 @@ h5 {
 }
 
 /* Pour les PC */
-@media screen and (min-width: 992px) {
-
-.loader::after {
-    content: "Ohmyfood";
-    position: fixed;
-    background-color: #0d0c0e86;
-    z-index: 1;
-    height: 100%;
-    width: 100%;
-    display: flex;
-   /* -webkit-box-pack: center; */ 
-    justify-content: center;
-   /* -webkit-box-align: center; */ 
-    align-items: center;
-    animation: loader 2.5s ease-out both;
-/*     -webkit-animation: loader 2s 2s ease-out both;
-    -moz-webkit-animation: loader 2s 2s ease-out both; */
-   
-}
-    @keyframes loader {
-        100%{
-
-          filter:grayscale(5px);
-          letter-spacing: 150px;
-          display: none;
-
-          
-        }
-  } 
+@media screen and (min-width: 992px) { 
 
     .search_bar h2 {
         font-size: 30px;
